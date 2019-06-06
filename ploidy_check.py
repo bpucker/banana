@@ -67,6 +67,12 @@ def main( arguments ):
 	ax.set_xlabel( "allele frequency" )
 	ax.set_ylabel( "number of variants" )
 	
+	ax.plot( [ 0.33, 0.33 ], [ 0, 100000 ], color="black" )
+	ax.plot( [ 0.5, 0.5 ], [ 0, 100000 ], color="black" )
+	ax.plot( [ 0.66, 0.66 ], [ 0, 100000 ], color="black" )
+	
+	ax.set_xlim( 0, 1 )
+	
 	ax.spines['top'].set_visible(False)
 	ax.spines['right'].set_visible(False)
 	plt.subplots_adjust( left=0.15, right=0.99, top=0.99, bottom=0.1 )
